@@ -1,5 +1,6 @@
 package com.imooc.dto;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 /**
@@ -12,6 +13,7 @@ public class UserQueryCondition {
 
     private String username;
 
+    @ApiModelProperty(value = "用户年龄")
     private int age;
 
     private int ageTo;

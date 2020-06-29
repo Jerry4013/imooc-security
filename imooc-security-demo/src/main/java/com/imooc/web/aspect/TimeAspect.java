@@ -2,8 +2,6 @@ package com.imooc.web.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
-import org.aspectj.lang.annotation.Aspect;
-import org.springframework.stereotype.Component;
 
 import java.util.Date;
 
@@ -12,8 +10,8 @@ import java.util.Date;
  * Date: 2020-06-27
  * Time: 7:13 PM
  */
-@Aspect
-@Component
+// @Aspect
+// @Component
 public class TimeAspect {
 
     @Around("execution(* com.imooc.web.controller.UserController.*(..))")
